@@ -1,0 +1,104 @@
+body.lock {
+  overflow: hidden;
+}
+body {
+  font-family: $ff1;
+  @include fz(16);
+  line-height: 1;
+}
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  overflow: hidden;
+}
+main {
+  flex: 1 1 auto;
+  display: grid;
+  @media (max-width: 767px) {
+    row-gap: 9.375vw;
+    row-gap: 20vw;
+  }
+  @media (min-width: 768px) {
+    row-gap: 5.9vw;
+  }
+  @media (min-width: 768px) {
+    section {
+      &:first-child {
+        margin-bottom: -5.9vw;
+      }
+    }
+  }
+}
+img {
+  max-width: 100%;
+}
+.title {
+  text-transform: uppercase;
+  font-family: $ff2;
+  @media (max-width: 767px) {
+    font-size: 11.875vw;
+    letter-spacing: 0.03vw;
+  }
+  @media (min-width: 768px) {
+    font-size: 6.25vw;
+    letter-spacing: 0.0156vw;
+  }
+  display: flex;
+  flex-direction: column;
+  :first-child {
+    align-self: flex-start;
+  }
+  :last-child {
+    align-self: flex-end;
+  }
+}
+.text-container {
+  display: flex;
+  flex-direction: column;
+  @media (max-width: 767px) {
+    row-gap: 0.7vw;
+  }
+  @media (min-width: 768px) {
+    row-gap: 0.28vw;
+  }
+}
+.text {
+  line-height: 1.5;
+  text-transform: uppercase;
+  @media (max-width: 767px) {
+    font-size: 3.44vw;
+    letter-spacing: 0.01vw;
+  }
+  @media (min-width: 768px) {
+    letter-spacing: 0.05vw;
+    font-size: 1.736vw;
+  }
+}
+
+.main-title {
+  font-family: $ff2;
+
+  @media (max-width: 767px) {
+    font-size: 14.06vw;
+    letter-spacing: 0.035vw;
+  }
+  @media (min-width: 768px) {
+    font-size: 6.25vw;
+    letter-spacing: 0.0156vw;
+  }
+}
+
+.small-title {
+  font-family: $ff2;
+
+  @media (max-width: 767px) {
+    font-size: 7.5vw;
+    letter-spacing: 0.0187vw;
+  }
+  @media (min-width: 768px) {
+    font-size: 4.86vw;
+    letter-spacing: 0.0121vw;
+  }
+}

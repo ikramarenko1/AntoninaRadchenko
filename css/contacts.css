@@ -1,0 +1,85 @@
+@media (max-width: 767px) {
+  .contacts {
+    padding-top: percent(30, 320);
+    padding-bottom: percent(30, 320);
+    padding-left: percent(30, 320);
+    padding-right: percent(30, 320);
+  }
+}
+@media (min-width: 768px) {
+  .contacts {
+    padding-right: percent(112, 1440);
+    padding-left: percent(112, 1440);
+    padding-top: percent(85, 1440);
+    padding-bottom: percent(85, 1440);
+  }
+}
+@media (max-width: 767px) {
+  .contacts__main-title {
+    margin-bottom: 4.69vw;
+    font-size: 11.9vw;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__main-title {
+    margin-bottom: 3.125vw;
+  }
+}
+.contacts__list {
+  display: flex;
+  flex-direction: column;
+}
+@media (max-width: 767px) {
+  .contacts__list {
+    row-gap: 2vw;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__list {
+    row-gap: 1vw;
+  }
+}
+.contacts__item {
+  color: #fff;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+}
+.contacts__item:before {
+  content: "";
+  display: inline-block;
+}
+.contacts__item:nth-child(1):before {
+  background: url("../img/icons/instagram.svg") center/contain no-repeat;
+}
+.contacts__item:nth-child(2):before {
+  background: url("../img/icons/telegram.svg") center/contain no-repeat;
+}
+.contacts__item:nth-child(3):before {
+  background: url("../img/icons/facebook.svg") center/contain no-repeat;
+}
+.contacts__item:nth-child(4):before {
+  background: url("../img/icons/phone.svg") center/contain no-repeat;
+}
+@media (max-width: 767px) {
+  .contacts__item {
+    -moz-column-gap: 1vw;
+         column-gap: 1vw;
+    font-size: 4.218vw;
+  }
+  .contacts__item:before {
+    width: 5vw;
+    height: 5vw;
+  }
+}
+@media (min-width: 768px) {
+  .contacts__item {
+    font-size: 2.08vw;
+    -moz-column-gap: 0.5vw;
+         column-gap: 0.5vw;
+  }
+  .contacts__item:before {
+    width: 2.5vw;
+    height: 2.5vw;
+  }
+}

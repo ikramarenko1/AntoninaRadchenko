@@ -1,0 +1,31 @@
+{
+  "singleQuote": false,
+  "printWidth": 150,
+  "semi": false,
+  "singleAttributePerLine": false,
+  "tabWidth": 3,
+  "useTabs": false,
+  
+  "overrides": [
+    {
+      "files": "*.html",
+      "options": {
+        "htmlWhitespaceSensitivity": "ignore"
+      }
+    },
+    {
+      "files": "*.css",
+      "options": {
+        "printWidth": 100,
+        "semi": true
+      }
+    },
+    {
+      "files": "*.js",
+      "options": {
+        "printWidth": 100,
+        "semi": true
+      }
+    }
+  ]
+}

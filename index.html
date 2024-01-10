@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="css/index.css" />
+   </head>
+
+   <body>
+      <div class="wrapper">
+         <main id="main">
+            <header class="mobile-header">
+               <img src="./img/logo-letters.svg" alt="logo Antonina Radchenko" />
+               <img src="./img/logo-name.svg" alt="logo Antonina Radchenko" />
+               <img src="./img/icons/burger.svg" alt="menu" />
+            </header>
+            <section class="mobile-menu">
+               <div class="mobile-menu__wrapper">
+                  <nav class="mobile-menu__nav">
+                     <a href="#main" class="mobile-menu__link">
+                        <img src="./img/logo-letters.svg" alt="logo Antonina Radchenko" />
+                        <img src="./img/logo-name.svg" alt="logo Antonina Radchenko" />
+                     </a>
+                     <a class="mobile-menu__link" href="#about">про мене</a>
+                     <a class="mobile-menu__link" href="#education">освіта</a>
+                     <a class="mobile-menu__link" href="#requests">запити</a>
+                     <a class="mobile-menu__link" href="#methods">методики</a>
+                     <a class="mobile-menu__link" href="#service">формат</a>
+                     <a class="mobile-menu__link" href="#contacts">контакти</a>
+                  </nav>
+               </div>
+            </section>
+            <section class="hero">
+               <div class="hero__image">
+                  <img src="./img/hero.jpg" alt="Antonina Radchenko" />
+               </div>
+               <div class="hero__body">
+                  <header class="header">
+                     <nav class="header__conatiner">
+                        <a href="#main" class="header__link">
+                           <img src="./img/logo-letters.svg" alt="logo Antonina Radchenko" />
+                           <img src="./img/logo-name.svg" alt="logo Antonina Radchenko" />
+                        </a>
+                        <a href="#education" class="header__link">освіта</a>
+                        <a href="#requests" class="header__link">запити</a>
+                        <a href="#methods" class="header__link">методики</a>
+                        <a href="#service" class="header__link">формат</a>
+                        <a href="#contacts" class="header__link">контакти</a>
+                     </nav>
+                  </header>
+                  <h1 class="hero__content">
+                     <p class="hero__vertical">Вирішення</p>
+                     <div class="hero__text">
+                        <p class="hero__first-line">проблеми</p>
+                        <p class="hero__second-line">починається з її</p>
+                        <p class="hero__third-line">
+                           усвід
+                           <span class="hero__decor">
+                              <img src="./img/decor.png" alt="" />
+                           </span>
+                        </p>
+                        <p class="hero__fourth-line">-млення</p>
+                     </div>
+                  </h1>
+                  <a href="#about" class="hero__button btn">ДЕТАЛЬНІШЕ</a>
+               </div>
+            </section>
+            <section class="about" id="about">
+               <h2 class="about__title title">
+                  <span>Про</span>
+                  <span>Мене</span>
+               </h2>
+               <div class="about__image">
+                  <img src="./img/about.jpg" alt="about" />
+               </div>
+               <div class="about__text-container text-container">
+                  <p class="text">
+                     <span>Дитячий та сімейний психолог,</span>
+                     фахівець прийомного батьківства та усиновлення, фасилітатор «Міжнародної програми ICDP», арт-терапевт, співавтор курсу
+                     «Дисципліна як фундамент успіху», членкиня ГС «Національна психологічна асоціація»
+                  </p>
+                  <p class="text">
+                     <span>Маю досвід роботи більше 17 років, з</span>
+                     них 12 років в державній системі, більше 5 років в приватному секторі.
+                  </p>
+               </div>
+            </section>
+            <section class="education" id="education">
+               <h2 class="education__main-title main-title">Освіта</h2>
+               <h3 class="education__title education__title_first title">2003</h3>
+               <p class="education__text education__text_first text">
+                  Полтавський державний педагогічний університет ім. В. Г. Короленка. Повна вища освіта, спеціальність “Психологія. Соціальна
+                  педагогіка” та кваліфікація психолога і соціального педагога
+               </p>
+               <div class="education__arrow">
+                  <img src="./img/icons/arrow.svg" alt="arrow" />
+               </div>
+               <h3 class="education__title education__title_second title">2008</h3>
+               <p class="education__text education__text_second text">
+                  Полтавський державний педагогічний університет ім. В. Г. Короленка. спеціальність “Соціальна педагогіка” та здобула магістра
+                  соціальної педагогіки.
+               </p>
+               <div class="education__star star">
+                  <img src="./img/icons/star.svg" alt="star" />
+               </div>
+               <h4 class="education__small-title small-title">Кожного року</h4>
+               <p class="education__text text">підвищення кваліфікації у форматі додаткової освіти.</p>
+            </section>
+            <section class="requests" id="requests">
+               <div class="requests__image">
+                  <picture>
+                     <source type="image/webp" srcset="./img/requests.jpg" media="(min-width: 768px)" />
+                     <source type="image/webp" srcset="./img/requests_mob.jpg" media="(min-width: 200px)" />
+                     <img src="./img/requests_mob.jpg" :alt="requests" />
+                  </picture>
+               </div>
+               <h2 class="requests__main-title main-title">
+                  Запити з
+                  <br />
+                  якими до мене
+                  <br />
+                  звертаються
+               </h2>
+               <div class="requests__arrow">
+                  <img src="./img/icons/arrow-white.svg" alt="arrow" />
+               </div>
+
+               <ul class="requests__list">
+                  <li class="requests__item">сімейні конфлікти</li>
+                  <li class="requests__item">вікові кризи</li>
+                  <li class="requests__item">стосунки «батьки-діти»</li>
+                  <li class="requests__item">усиновлення</li>
+                  <li class="requests__item">діти та повторні шлюби</li>
+                  <li class="requests__item">втрата близьких</li>
+                  <li class="requests__item">емоційне вигорання</li>
+                  <li class="requests__item">батьківська компетентність</li>
+                  <li class="requests__item">життєві кризи</li>
+                  <li class="requests__item">профорієнтація</li>
+               </ul>
+            </section>
+            <section class="methods" id="methods">
+               <h2 class="methods__main-title main-title">методики</h2>
+               <ul class="methods__list">
+                  <li class="methods__item">Психологічне інтерв’ю</li>
+                  <li class="methods__item">Психологічне супроводження</li>
+                  <li class="methods__item">Кризове консультування</li>
+                  <li class="methods__item">Тестування</li>
+                  <li class="methods__item">Проективні методики (МАК&ndash;карти)</li>
+                  <li class="methods__item">Арт-терапія</li>
+                  <li class="methods__item">Фільмотерапія</li>
+               </ul>
+            </section>
+            <section class="service" id="service">
+               <h2 class="service__title title">
+                  <span>Формат</span>
+                  <span>Послуг</span>
+               </h2>
+               <div class="service__image">
+                  <img src="./img/service.jpg" alt="about" />
+               </div>
+               <div class="service__text-wrapper">
+                  <ul class="service__text-container text-container">
+                     <li class="service__list-item text">Індивідуальне консультування;</li>
+                     <li class="service__list-item text">Парні/сімейні консультування;</li>
+                     <li class="service__list-item text">Групові тренінги та заняття;</li>
+                     <li class="service__list-item text">Надання письмових висновків в судових спорах;</li>
+                     <li class="service__list-item text">Надання профорієнтаційних висновків;</li>
+                     <li class="service__list-item text">Супроводження психологічних тестувань;</li>
+                     <li class="service__list-item text">Участь в корпоративних мотиваційних зустрічах.</li>
+                  </ul>
+                  <div class="service__text-container text-container">
+                     <p class="text">Усі види послуг можуть бути надалі у форматі он-лайн та очної зустрічі.</p>
+                  </div>
+               </div>
+            </section>
+            <section class="contacts" id="contacts">
+               <div class="contacts__image">
+                  <img src="./img/contacts.jpg" alt="contacts" />
+               </div>
+               <h2 class="contacts__main-title main-title">контакти</h2>
+               <ul class="contacts__list">
+                  <li class="contacts__item">
+                     <a href="@antonina_rad_psyhologist">:&nbsp;@antonina_rad_psyhologist</a>
+                  </li>
+                  <li class="contacts__item">
+                     <a href="@antonina_rad">:&nbsp;@antonina_rad</a>
+                  </li>
+                  <li class="contacts__item">
+                     <a href="@antonina.vadimovna.3">:&nbsp;@antonina.vadimovna.3</a>
+                  </li>
+                  <li class="contacts__item">
+                     <a href="tel:+380681922672">+38(068)192 26 72 (Viber)</a>
+                     <a href="tel:+380990808139">+38(099)080 81 39 (whatsapp)</a>
+                  </li>
+               </ul>
+            </section>
+            <footer class="footer">
+               <div class="footer__content footer-content">
+                  <a href="#main" class="footer-content__logo">
+                     <img src="./img/logo-letters.svg" alt="logo Antonina Radchenko" />
+                     <img src="./img/logo-name.svg" alt="logo Antonina Radchenko" />
+                  </a>
+                  <nav class="footer-content__menu">
+                     <a href="#education" class="footer-content__link">освіта</a>
+                     <a href="#requests" class="footer-content__link">запити</a>
+                     <a href="#methods" class="footer-content__link">методики</a>
+                     <a href="#service" class="footer-content__link">формат</a>
+                     <a href="#contacts" class="footer-content__link">контакти</a>
+                  </nav>
+                  <ul class="footer-content__social contacts__list">
+                     <li class="contacts__item">
+                        <a class="black" href="@antonina_rad_psyhologist">:&nbsp;@antonina_rad_psyhologist</a>
+                     </li>
+                     <li class="contacts__item">
+                        <a class="black" href="@antonina_rad">:&nbsp;@antonina_rad</a>
+                     </li>
+                     <li class="contacts__item">
+                        <a class="black" href="@antonina.vadimovna.3">:&nbsp;@antonina.vadimovna.3</a>
+                     </li>
+                  </ul>
+               </div>
+               <p class="footer__copy">©Антоніна Радченко, 2023</p>
+            </footer>
+         </main>
+      </div>
+      <script src="./js/script.js"></script>
+   </body>
+</html>
+<!-- Выгрузка графики 8мин -->
+<!-- Работа со шрифтами(скачать, подключить) 12мин -->
+<!-- .hero пиксель перфект резина 80мин-->
+<!-- .about, .services резина 45мин-->
+<!-- .education резина 35мин-->
+<!-- .requests резина 25мин-->
+<!-- .methods резина 13мин-->
+<!-- .contacts резина 26мин-->

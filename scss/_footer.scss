@@ -1,0 +1,110 @@
+.footer {
+  @media (max-width: 767px) {
+    margin-top: -9.375vw;
+    margin-top: -20vw;
+    padding-top: 10vw;
+    padding-bottom: 4vw;
+    padding-left: percent(30, 320);
+    padding-right: percent(30, 320);
+  }
+  @media (min-width: 768px) {
+    padding-right: percent(112, 1440);
+    padding-left: percent(112, 1440);
+    padding-top: 6.18vw;
+    padding-bottom: 2.01vw;
+    margin-top: -5.9vw;
+  }
+  // .footer__content
+
+  &__content {
+  }
+
+  // .footer__copy
+
+  &__copy {
+    font-weight: 300;
+    @media (max-width: 767px) {
+      padding-top: 4.06vw;
+      font-size: 1.828vw;
+    }
+    @media (min-width: 768px) {
+      padding-top: 3.2vw;
+      font-size: 1.04vw;
+    }
+  }
+}
+.footer-content {
+  display: grid;
+  align-items: center;
+  @media (max-width: 767px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media (min-width: 768px) {
+    grid-template-columns: 5fr 4fr 5fr;
+  }
+  // .footer-content__logo
+
+  &__logo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    //  justify-self: start;
+    max-width: max-content;
+    img {
+      &:first-child {
+        @media (max-width: 767px) {
+          width: 19.06vw;
+        }
+        @media (min-width: 768px) {
+          width: 13.958vw;
+        }
+      }
+      &:last-child {
+        @media (max-width: 767px) {
+          width: 35.31vw;
+        }
+        @media (min-width: 768px) {
+          width: 25.654vw;
+        }
+      }
+    }
+  }
+
+  // .footer-content__menu
+
+  &__menu {
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.4vw;
+      justify-self: center;
+    }
+  }
+
+  // .footer-content__link
+
+  &__link {
+    @media (min-width: 768px) {
+      font-size: 1.736vw;
+      text-transform: uppercase;
+    }
+  }
+
+  // .footer-content__social
+
+  &__social {
+    justify-self: end;
+  }
+  .contacts__item a {
+    @media (max-width: 767px) {
+      font-size: 2.01vw;
+      &:before {
+        width: 3vw;
+        height: 3vw;
+      }
+    }
+  }
+}

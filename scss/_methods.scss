@@ -1,0 +1,75 @@
+.methods {
+  @media (max-width: 767px) {
+    padding-left: percent(30, 320);
+    padding-right: percent(30, 320);
+    padding-top: 20vw;
+    margin-top: -20vw;
+  }
+  // .methods__main-title
+
+  &__main-title {
+    text-align: center;
+    @media (max-width: 767px) {
+      margin-bottom: 5vw;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 2vw;
+    }
+  }
+
+  // .methods__list
+
+  &__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @media (max-width: 767px) {
+      row-gap: 1vw;
+    }
+    @media (min-width: 768px) {
+      row-gap: 0.5vw;
+    }
+  }
+
+  // .methods__item
+
+  &__item {
+    line-height: 1.34;
+    font-family: $ff2;
+    text-align: center;
+    @media (max-width: 767px) {
+      font-size: 4.93vw;
+      letter-spacing: 0.0123vw;
+    }
+    @media (min-width: 768px) {
+      font-size: 2.78vw;
+      letter-spacing: 0.007vw;
+    }
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    @media (max-width: 767px) {
+      row-gap: 1vw;
+    }
+    @media (min-width: 768px) {
+      row-gap: 0.5vw;
+    }
+    &:before {
+      content: "";
+      background: url("../img/icons/star.svg") center/contain no-repeat;
+      display: inline-block;
+      @media (max-width: 767px) {
+        width: 4.7vw;
+        height: 4.7vw;
+      }
+      @media (min-width: 768px) {
+        width: 2.09vw;
+        height: 2.09vw;
+      }
+    }
+  }
+}
+.main-title {
+}

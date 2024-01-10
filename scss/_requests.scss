@@ -1,0 +1,120 @@
+.requests {
+  position: relative;
+  overflow: hidden;
+  @media (max-width: 767px) {
+    padding-left: percent(30, 320);
+    padding-right: percent(30, 320);
+    padding-top: percent(60, 320);
+    padding-bottom: percent(30, 320);
+    margin-top: -10vw;
+  }
+  @media (min-width: 768px) {
+    padding-top: percent(85, 1440);
+    padding-bottom: percent(85, 1440);
+    padding-left: percent(112, 1440);
+    padding-right: percent(112, 1440);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2vw;
+    align-items: center;
+  }
+  // .requests__image
+
+  &__image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    padding-bottom: 100%;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      @media (max-width: 767px) {
+        object-position: 50% 0%;
+      }
+      @media (min-width: 768px) {
+        object-position: center;
+      }
+    }
+  }
+
+  // .requests__main-title
+
+  &__main-title {
+    color: #fff;
+    position: relative;
+    line-height: 1.2;
+    @media (max-width: 767px) {
+      font-size: 7.8vw;
+      margin-bottom: 4vw;
+      max-width: 90%;
+    }
+    @media (min-width: 768px) {
+      grid-column: 1/8;
+      grid-row: 1/2;
+    }
+  }
+
+  // .requests__arrow
+
+  &__arrow {
+    @media (max-width: 767px) {
+      display: none;
+    }
+    @media (min-width: 768px) {
+      width: 14.7vw;
+      height: auto;
+      position: absolute;
+      top: 53.2%;
+      left: 33%;
+    }
+  }
+
+  // .requests__list
+
+  &__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    @media (max-width: 767px) {
+      row-gap: 3.125vw;
+      max-width: max-content;
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media (min-width: 768px) {
+      row-gap: 2vw;
+      grid-column: 8/13;
+      grid-row: 1/2;
+    }
+  }
+
+  // .requests__item
+
+  &__item {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #d9d9d9;
+    @media (max-width: 767px) {
+      border-radius: 1.17vw;
+      padding: 3.125vw;
+      font-size: 2.937vw;
+      letter-spacing: 0.088vw;
+    }
+    @media (min-width: 768px) {
+      border-radius: 0.7vw;
+      padding: 1.5vw 2vw;
+      font-size: 1.736vw;
+      letter-spacing: 0.052vw;
+    }
+  }
+}
+.main-title {
+}

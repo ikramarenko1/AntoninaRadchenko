@@ -1,0 +1,126 @@
+.education {
+  @media (max-width: 767px) {
+    //  padding-top: percent(30, 320);
+    //  padding-bottom: percent(30, 320);
+    padding-left: percent(30, 320);
+    padding-right: percent(30, 320);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  @media (min-width: 768px) {
+    padding-right: percent(112, 1440);
+    padding-left: percent(112, 1440);
+    //  padding-top: percent(85, 1440);
+    //  padding-bottom: percent(85, 1440);
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    column-gap: 2vw;
+    row-gap: 2vw;
+  }
+  // .education__main-title
+
+  &__main-title {
+    @media (max-width: 767px) {
+      margin-bottom: 8vw;
+      font-size: 14.06vw;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 2.86vw;
+      font-size: 6.25vw;
+      grid-row: 1/2;
+      grid-column: 1/13;
+    }
+  }
+
+  // .education__title
+
+  &__title {
+    @media (max-width: 767px) {
+      margin-bottom: 4vw;
+    }
+    @media (min-width: 768px) {
+      grid-row: 2/3;
+      &_first {
+        grid-column: 1/4;
+      }
+      &_second {
+        grid-column: 7/13;
+      }
+    }
+  }
+
+  // .education__text
+
+  &__text {
+    @media (min-width: 768px) {
+      &:last-child {
+        grid-row: 5/6;
+        grid-column: 1/7;
+      }
+      &_first,
+      &_second {
+        grid-row: 3/4;
+      }
+      &_first {
+        grid-column: 1/7;
+      }
+      &_second {
+        grid-column: 7/13;
+      }
+    }
+  }
+
+  // .education__arrow
+
+  &__arrow {
+    @media (max-width: 767px) {
+      width: 13.437vw;
+      height: 13.437vw;
+      transform: rotate(90deg);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 3.75vw;
+      margin-bottom: 3.75vw;
+    }
+    @media (min-width: 768px) {
+      height: auto;
+      width: 11.39vw;
+      grid-row: 2/3;
+      grid-column: 4/7;
+      align-self: center;
+    }
+  }
+
+  // .education__small-title
+
+  &__small-title {
+    @media (max-width: 767px) {
+      margin-bottom: 3.43vw;
+      font-size: 7.5vw;
+      letter-spacing: 0.0187vw;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: -0.6vw;
+      font-size: 4.86vw;
+      letter-spacing: 0.0121vw;
+      grid-row: 4/5;
+      grid-column: 1/8;
+    }
+  }
+
+  // .education__star
+  &__star {
+    @media (max-width: 767px) {
+      width: 4.7vw;
+      height: auto;
+      margin-top: 3.75vw;
+      margin-bottom: 3.75vw;
+    }
+    @media (min-width: 768px) {
+      display: none;
+    }
+  }
+}

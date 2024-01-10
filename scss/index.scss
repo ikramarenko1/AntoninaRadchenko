@@ -1,0 +1,18 @@
+// Подлкючение базовых стилей
+@import "./default/variables";
+@import "./default/null";
+@import "./default/mixins";
+@import "./default/function";
+@import "./default/patterns";
+@import "./default/fonts";
+@import "./default/global";
+@import "./default/text";
+
+@import "./menu";
+@import "./hero";
+@import "./about-service";
+@import "./education";
+@import "./requests";
+@import "./methods";
+@import "./contacts";
+@import "./footer";

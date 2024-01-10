@@ -1,0 +1,167 @@
+.contacts {
+  position: relative;
+  @media (max-width: 767px) {
+    padding-bottom: percent(90, 320);
+    padding-top: percent(300, 320);
+    padding-left: percent(30, 320);
+    padding-right: percent(30, 320);
+    margin-top: -10vw;
+  }
+  @media (min-width: 768px) {
+    padding-right: percent(112, 1440);
+    padding-left: percent(112, 1440);
+    padding-top: percent(135, 1440);
+    padding-bottom: percent(340, 1440);
+    margin-top: -6.2vw;
+  }
+  // .contacts__image
+
+  &__image {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      @media (max-width: 767px) {
+        object-position: 87% 50%;
+      }
+    }
+  }
+
+  // .contacts__main-title
+
+  &__main-title {
+    color: #fff;
+    position: relative;
+    @media (max-width: 767px) {
+      margin-bottom: 4.69vw;
+      font-size: 11.9vw;
+    }
+    @media (min-width: 768px) {
+      margin-bottom: 3.125vw;
+    }
+  }
+
+  // .contacts__list
+
+  &__list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    @media (max-width: 767px) {
+      row-gap: 1vw;
+    }
+    @media (min-width: 768px) {
+      row-gap: 0.5vw;
+    }
+  }
+
+  // .contacts__item
+
+  &__item {
+    a {
+      text-transform: uppercase;
+      color: #fff;
+      font-weight: 500;
+      display: inline-flex;
+      align-items: center;
+      &:before {
+        content: "";
+        display: inline-block;
+      }
+      &.black {
+        color: $black;
+      }
+    }
+    &:nth-child(1) {
+      a {
+        &:before {
+          background: url("../img/icons/instagram.svg") center/contain no-repeat;
+        }
+      }
+      a.black {
+        &:before {
+          background: url("../img/icons/instagram-black.svg") center/contain no-repeat;
+        }
+      }
+    }
+    &:nth-child(2) {
+      a {
+        &:before {
+          background: url("../img/icons/telegram.svg") center/contain no-repeat;
+        }
+      }
+      a.black {
+        &:before {
+          background: url("../img/icons/telegram-black.svg") center/contain no-repeat;
+        }
+      }
+    }
+    &:nth-child(3) {
+      a {
+        &:before {
+          background: url("../img/icons/facebook.svg") center/contain no-repeat;
+        }
+      }
+      a.black {
+        &:before {
+          background: url("../img/icons/facebook-black.svg") center/contain no-repeat;
+        }
+      }
+    }
+    &:nth-child(4) {
+      a:first-child {
+        @media (max-width: 767px) {
+          margin-bottom: 1vw;
+        }
+        @media (min-width: 768px) {
+          margin-bottom: 0.5vw;
+        }
+        &:before {
+          background: url("../img/icons/phone.svg") center/contain no-repeat;
+        }
+      }
+      a:last-child {
+        @media (min-width: 768px) {
+          display: block;
+          max-width: max-content;
+          padding-left: 0.5vw;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      a {
+        padding-top: 0.5vw;
+        padding-bottom: 0.5vw;
+        column-gap: 1vw;
+        font-size: 4.218vw;
+        &:before {
+          width: 5vw;
+          height: 5vw;
+        }
+      }
+    }
+    @media (min-width: 768px) {
+      a {
+        padding-top: 0.25vw;
+        padding-bottom: 0.25vw;
+        font-size: 2.08vw;
+        column-gap: 0.5vw;
+        &:before {
+          width: 2.5vw;
+          height: 2.5vw;
+        }
+      }
+    }
+  }
+}
+.main-title {
+}

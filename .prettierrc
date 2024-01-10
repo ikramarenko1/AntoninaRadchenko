@@ -20,6 +20,14 @@
         "semi": true
       }
     },
+	{
+		"files": "*.scss",
+		"options": {
+			"printWidth": 100,
+			"semi": true,
+			"singleQuote": true
+		}
+	},
     {
       "files": "*.js",
       "options": {

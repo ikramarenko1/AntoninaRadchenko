@@ -1,0 +1,27 @@
+# System files and folders
+.DS_Store
+Thumbs.db
+
+# Node folders
+node_modules/
+
+# npm folders
+npm-debug.log
+
+# bower folders
+bower_components/
+
+# Generated files
+dist/
+
+# IDE files
+*.code-workspace
+.vscode/
+.idea/
+
+# OS generated files
+ehthumbs.db
+Icon?
+
+# .prettierrc
+.prettierrc
